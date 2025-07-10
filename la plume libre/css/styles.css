@@ -1,0 +1,341 @@
+
+/* Corps de la page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9f0;
+}
+
+/* Tête de la page */
+header.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 20px; 
+}
+
+/* Logo */
+header.header img {
+    width: 200px;
+}
+
+
+/* Page de bienvenue (landing page) */
+.landing-page {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.big-title, .intro-text{
+  margin: 0;
+}
+
+.big-title { 
+    color: black;
+    font-size: 60px; 
+    padding: 10px 20px;
+    max-width: 900px;
+    line-height: 1.2;
+}
+.intro-text {
+    color:black;
+    font-size: 20px;
+    padding: 10px 20px ;
+    max-width:800px;
+    line-height:1.5;
+}
+
+
+/* Section top-page */
+section.top-page {
+    background-color: #f8f9f0;
+    background-size: cover;
+    height: 70vh;
+    padding: 25px;
+    position: relative;
+}
+
+
+/* Menu de navigation */
+.nav-list {
+    display: flex;
+    gap: 50px; 
+    list-style: none;
+    margin: 30;
+    padding: 40;
+}
+
+.nav-list li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list li a.active {
+    text-decoration: underline;
+}
+
+
+/* Meilleures ventes */
+
+.section-title {
+color: black;
+font-size: 50px; 
+padding: 10px 20px;
+max-width: 900px;
+line-height: 1,2;
+text-align: left;
+}
+
+.section-title::before {
+  position: absolute;
+  background-color: #2e6417;
+  width: 40px;
+  height: 5px;
+  bottom: 1;
+}
+
+.nos-favoris{
+  margin: 70px;
+  background-color: #f8f9f0;
+}
+
+.best-book{
+  background-color: #f8f9f0;
+  min-height: 600px ;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.livre-box{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-color: #f8f9f0;
+  min-width: 350px;
+  height: 500px ;
+  flex: 1;
+}
+.livre1 {
+  background-image: url(../Image/les\ 4\ accords.jpg);
+}
+.livre2 {
+  background-image: url(../Image/une\ si\ longue\ lettre.jpg);
+}
+.livre3 {
+  background-image: url(../Image/les\ impatientes.jpg);
+}
+.livre4 {
+  background-image: url(../Image/Le\ moine\ vendit.jfif);
+}
+
+.livre-details{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #f8f9f0 ;
+  padding: 5px 20px;
+}
+
+.nom-livre{
+  font-size: 22px;
+  font-weight: 600px;            
+  line-height: 3px;
+}
+
+.prix-livre{
+  color: black;
+  line-height: 3px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+
+/* ABOUT HTML CSS */
+
+
+.about-section {
+  padding: 40px 20px;
+  background-color: #f8f9f0;
+  font-family: 'Playfair display', serif;
+  color: #333;
+}
+
+.about-block {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f8f9f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+  text-align: center;
+  font-size: 28px;
+  color: #f8f9f0;
+  margin-bottom: 20px;
+  background-color: #2e6417;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.about-block p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.nav-list li a.active {
+    text-decoration: underline;
+}
+
+
+
+/* === CONTACT PAGE === */
+
+.contact-header {
+  background-color: #2e6417;
+  padding: 20px;
+  color: #f8f9f0;
+  text-align: center;
+}
+
+.contact-title {
+  margin: 0;
+  font-size: 32px;
+  font-family: 'Georgia', serif;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #f8f9f0;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav-list a:hover,
+.nav-list a.active {
+  background-color: #f8f9f0;
+  color: #2e6417;
+}
+
+
+/* Section Contact */
+.contact-section {
+  padding: 40px 20px;
+  background-color: #f8f9f0;
+  font-family: 'Georgia', serif;
+  color: #000;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+form button {
+  background-color: #2e6417;
+  color: #f8f9f0;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #245213;
+}
+
+.hidden {
+  display: none;
+}
+
+#confirmation {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e6417;
+  text-align: center;
+}
+
+
+/* pied de page */
+
+.site-footer {
+  background-color: #2e6417;
+  color: #f8f9f0;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 16px;
+}
+
+.site-footer a {
+  color: #f8f9f0;
+  text-decoration: underline;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.site-footer a:hover {
+  color: #d9e4c3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
